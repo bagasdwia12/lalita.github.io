@@ -1,7 +1,10 @@
+import { ALL } from "dns";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // experimental: {
+  //   turbo: ALL,
+  // }
 };
 
 export default nextConfig;

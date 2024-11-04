@@ -15,7 +15,7 @@ export default function OurProductSection() {
                                 <OurProductCard
                                     key={index}
                                     icon={product.icon}
-                                    title={product.title}
+                                    label={product.label}
                                     description={product.description}
                                 />
                             ))}

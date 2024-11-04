@@ -1,6 +1,6 @@
 import Button from "./button";
 
-export default function OurProductCard({ icon, title, description }: (ModelAndCardProps)) {
+export default function OurProductCard({ icon, label: title, description }: (globalPros)) {
 
     return (
         <>

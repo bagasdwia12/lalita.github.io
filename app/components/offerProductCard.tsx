@@ -1,4 +1,4 @@
-export default function OfferProductCard({ icon, title, description }: (ModelAndCardProps)) {
+export default function OfferProductCard({ icon, label: title, description }: (globalPros)) {
 
     return (
         <>

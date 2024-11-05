@@ -1,6 +1,5 @@
+import { FAQModel } from "@/app/models/FAQModel";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
-import { FAQModel } from "../models/FAQModel";
-import { divider } from "@nextui-org/theme";
 import { Divider } from "@nextui-org/divider";
 
 export default function FAQSection() {
@@ -11,7 +10,7 @@ export default function FAQSection() {
     };
 
     return (
-        <div className="mt-20 mx-14">
+        <div id="faq" className="mt-20 mx-14">
             <div className="text-3xl font-normal mb-7 text-center">Frequently Asked Questions</div>
             <Accordion variant="splitted" itemClasses={itemClasses}>
                 {FAQModel.map((item, index) => (

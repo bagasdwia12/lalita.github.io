@@ -1,9 +1,10 @@
-import OfferProductCard from "../components/offerProductCard";
-import { offerProductModel } from "../models/offerProductModel";
+import OfferProductCard from "@/app/components/offerProductCard";
+import { offerProductModel } from "@/app/models/offerProductModel";
+
 
 export default function OfferProductSection() {
     return (
-        <div className="mt-20">
+        <div id="about-us" className="mt-20">
             <div className="bg-whiteBone w-full h-full px-14 py-24">
                 <div className="w-full flex-col">
                     <div className="text-3xl font-normal mb-16 text-center">We offer product</div>

@@ -2,6 +2,7 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { GrLocation } from "react-icons/gr";
 import { MdOutlineEmail } from "react-icons/md";
+import { globalPros } from "../models/globalProps";
 
 export default function ContentBuilder({ label }: globalPros) {
     const Component = contentRegistry[label];

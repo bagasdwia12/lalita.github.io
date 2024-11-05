@@ -1,8 +1,12 @@
+import Link from "next/link";
+import React from "react";
+
 interface ButtonProps {
     label: string;
     icon?: React.ReactNode;
-    size?: "small" | "medium" | "large"; // Menggunakan union types untuk ukuran
-    variant?: "primary" | "outline"; // Menggunakan union types untuk varian
+    size?: "small" | "medium" | "large";
+    variant?: "primary" | "outline";
+    href?: string;
 }
 
 const buttonSizes = {
@@ -21,13 +25,30 @@ export default function Button({
     icon,
     size = "small",
     variant = "primary",
+    href,
 }: ButtonProps) {
-    return (
-        <button
-            className={`${buttonSizes[size]} ${buttonVariants[variant]} text-lg rounded-full flex justify-center items-center`}
-        >
+    const buttonContent = (
+        <div className={`${buttonSizes[size]} ${buttonVariants[variant]} text-lg rounded-full flex justify-center items-center`}>
             {icon && <span className="mr-2">{icon}</span>}
             {label}
-        </button>
+        </div>
     );
+
+    if (href?.startsWith("http")) {
+        // Jika href adalah tautan eksternal (misalnya, WhatsApp)
+        return (
+            <a href={href} target="_blank" rel="noopener noreferrer">
+                {buttonContent}
+            </a>
+        );
+    } else if (href) {
+        // Jika href adalah tautan internal
+        return (
+            <Link href={`#${href}`}>
+                {buttonContent}
+            </Link>
+        );
+    }
+
+    return <button>{buttonContent}</button>;
 }

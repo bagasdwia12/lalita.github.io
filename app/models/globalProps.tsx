@@ -1,5 +1,6 @@
-interface globalPros {
-    icon?: string;
+export type globalPros = {
     label: string;
+    icon?: string;
     description?: string;
+    link?: string;
 }

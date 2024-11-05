@@ -1,3 +1,5 @@
+import { globalPros } from "./globalProps";
+
 export const offerProductModel: globalPros[] = [
     {
         icon: "./icons/ourOffer/satisfy-icon.png",

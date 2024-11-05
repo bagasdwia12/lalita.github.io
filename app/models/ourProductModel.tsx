@@ -1,3 +1,5 @@
+import { globalPros } from "./globalProps";
+
 export const ourProductModel: globalPros[] = [
     {
         icon: "./images/ourProduct/ear-mushroom.png",

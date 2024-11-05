@@ -1,11 +1,7 @@
+import { globalPros } from "../models/globalProps";
 import ContentBuilder from "./contentBuilder";
 
 export default function DetailContact({ label }: globalPros) {
-    const itemClasses = {
-        base: "py-0 w-full bg-whiteBone shadow-none",
-        title: "font-medium text-lg text-black",
-        indicator: "text-medium text-black",
-    };
 
     return (
         <>

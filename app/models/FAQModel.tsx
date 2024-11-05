@@ -1,3 +1,5 @@
+import { globalPros } from "./globalProps";
+
 export const FAQModel: globalPros[] = [
     {
         label: "Can order go aboard ?",

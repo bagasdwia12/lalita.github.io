@@ -1,3 +1,5 @@
+import { globalPros } from "../models/globalProps";
+
 export default function OfferProductCard({ icon, label: title, description }: (globalPros)) {
 
     return (

@@ -1,12 +1,12 @@
 import Button from "../components/button"
 import { FaWhatsapp } from "react-icons/fa";
-
+import Image from 'next/image';
 
 export default function HeroSection() {
     return (
         <>
             <div className="mt-20 mx-6 20pt-20 flec flex-col">
-                <img className="w-full h-full object-cover" src="./heroImage.png" alt="" />
+                <Image src="./heroImage.png" alt="hero-image" className="w-full h-full object-cover" />
                 <div className="flex justify-between items-center mx-8 mt-10">
                     <div className="w-1/4">
                         <h1 className="text-2xl font-medium">Lalita Ear Mushroom</h1>

@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import Image from 'next/image';
 
 const menuItem: string[] = ["Home", "About Us", "Product", "FAQ", "Contact"];
 const productItem: string[] = ["Ear Mushroom", "Baglog"];
@@ -9,7 +10,7 @@ export default function FooterSection() {
             <div className="mt-20">
                 <div className="flex bg-black px-14 py-9 justify-between">
                     <div className="flex flex-col justify-between">
-                        <img src="./company-logo-footer.png" alt="logo-lalita" className="w-[200px] h-16 mb-6" />
+                        <Image src="./company-logo-footer.png" alt="logo-lalita" className="w-[200px] h-16 mb-6" />
                         <div className="mb-6">
                             <p className="text-white">"grow to go"</p>
                             <p className="text-white">© 1996 - 2024 <span className="text-white font-medium">Lalita Mushroom</span>, All rights reserved</p>

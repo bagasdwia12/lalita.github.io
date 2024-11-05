@@ -1,7 +1,6 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { menuModel } from "../models/menuModel";
 
-const menuItem: string[] = ["Home", "About Us", "Product", "FAQ", "Contact"];
 const productItem: string[] = ["Ear Mushroom", "Baglog"];
 
 export default function FooterSection() {
